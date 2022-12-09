@@ -1,0 +1,155 @@
+{
+  "reportSchema": "1.1",
+  "scanInfo": {
+    "engineVersion": "7.3.3-SNAPSHOT",
+    "dataSource": [
+      {
+        "name": "NVD CVE Checked",
+        "timestamp": "2022-12-01T13:26:08"
+      },
+      {
+        "name": "NVD CVE Modified",
+        "timestamp": "2022-12-01T07:00:01"
+      },
+      {
+        "name": "VersionCheckOn",
+        "timestamp": "2022-12-01T11:40:34"
+      }
+    ]
+  },
+  "projectInfo": {
+    "name": "dependency-check sample",
+    "reportDate": "2022-12-01T14:25:16.288109500Z",
+    "credits": {
+      "NVD": "This report contains data retrieved from the National Vulnerability Database: http://nvd.nist.gov",
+      "NPM": "This report may contain data retrieved from the NPM Public Advisories: https://www.npmjs.com/advisories",
+      "RETIREJS": "This report may contain data retrieved from the RetireJS community: https://retirejs.github.io/retire.js/",
+      "OSSINDEX": "This report may contain data retrieved from the Sonatype OSS Index: https://ossindex.sonatype.org"
+    }
+  },
+  "dependencies": [
+    {
+      "isVirtual": false,
+      "fileName": "XmlSchema-1.4.2.jar",
+      "filePath": "C:\\Users\\user\\Documents\\core\\target\\test-classes\\XmlSchema-1.4.2.jar",
+      "actualFilePath": "C:\\Users\\user\\Documents\\core\\target\\test-classes\\XmlSchema-1.4.2.jar",
+      "md5": "ced8c8555d4e965cf7ce06459730479a",
+      "sha1": "7cf868b0d6a5b68be0dea014126b986b3387755a",
+      "sha256": "685393370cf7a777bcf49bae509d4bbb597e4077399f81298d77d5905cdd774a",
+      "description": "Commons XMLSchema is a light weight schema object model that can be used to manipualte or\n        generate a schema. It has a clean, easy to use API and can easily be integrated into an existing project\n        since it has almost no dependancies on third party libraries.",
+      "license": "The Apache Software License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0.txt",
+      "packagePath": "C:\\Users\\user\\Documents\\core\\target\\test-classes\\XmlSchema-1.4.2.jar",
+      "name": "org.apache.ws.commons.schema:XmlSchema",
+      "version": "1.4.2",
+      "ecosystem": "java",
+      "evidenceCollected": {
+        "vendorEvidence": [
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "name",
+            "value": "XmlSchema"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "pom",
+            "name": "organization name",
+            "value": "Apache Software Foundation"
+          },
+          {
+            "type": "vendor",
+            "confidence": "MEDIUM",
+            "source": "pom",
+            "name": "organization url",
+            "value": "http://www.apache.org/"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "url",
+            "value": "http://ws.apache.org/commons/XmlSchema"
+          }
+        ],
+        "vendorWeightings": [
+          "apache",
+          "commons",
+          "ws"
+        ],
+        "productEvidence": [
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "XmlSchema"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "apache"
+          },
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "commons"
+          }
+        ],
+        "productWeightings": [
+          "commons",
+          "schema",
+          "ws"
+        ],
+        "versionEvidence": [
+          {
+            "type": "version",
+            "confidence": "MEDIUM",
+            "source": "file",
+            "name": "name",
+            "value": "XmlSchema"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "version",
+            "value": "1.4.2"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "jar",
+            "name": "package name",
+            "value": "apache"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGH",
+            "source": "Manifest",
+            "name": "Bundle-Version",
+            "value": "1.4.2"
+          },
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "pom",
+            "name": "version",
+            "value": "1.4.2"
+          }
+        ]
+      },
+      "packages": [
+        {
+          "id": "pkg:maven/org.apache.ws.commons.schema/XmlSchema@1.4.2",
+          "confidence": "HIGH"
+        }
+      ]
+    }
+  ]
+}
