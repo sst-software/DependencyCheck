@@ -76,7 +76,7 @@ public class GolangModAnalyzer extends AbstractFileTypeAnalyzer {
      */
     private static String goPath = null;
     /**
-     * The file filter for Gopkg.lock
+     * The file filter for go.mod
      */
     private static final FileFilter GO_MOD_FILTER = FileFilterBuilder.newInstance()
             .addFilenames(GO_MOD)
