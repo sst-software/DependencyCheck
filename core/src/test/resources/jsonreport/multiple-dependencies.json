@@ -1,0 +1,929 @@
+{
+  "reportSchema": "1.1",
+  "scanInfo": {
+    "engineVersion": "7.3.0",
+    "dataSource": [
+      {
+        "name": "NVD CVE Checked",
+        "timestamp": "2022-11-25T16:07:12"
+      },
+      {
+        "name": "NVD CVE Modified",
+        "timestamp": "2022-11-25T14:00:01"
+      },
+      {
+        "name": "VersionCheckOn",
+        "timestamp": "2022-11-16T16:15:23"
+      }
+    ]
+  },
+  "projectInfo": {
+    "name": "",
+    "reportDate": "2022-11-25T15:07:23.809220700Z",
+    "credits": {
+      "NVD": "This report contains data retrieved from the National Vulnerability Database: http://nvd.nist.gov",
+      "NPM": "This report may contain data retrieved from the NPM Public Advisories: https://www.npmjs.com/advisories",
+      "RETIREJS": "This report may contain data retrieved from the RetireJS community: https://retirejs.github.io/retire.js/",
+      "OSSINDEX": "This report may contain data retrieved from the Sonatype OSS Index: https://ossindex.sonatype.org"
+    }
+  },
+  "dependencies": [
+    {
+      "isVirtual": true,
+      "fileName": "@mdi/font:5.9.55",
+      "filePath": "C:\\Users\\user\\Documents\\package.json?\\@mdi\\font:5.9.55",
+      "description": "Dist for Material Design Webfont. This includes the Stock and Community icons in a single webfont collection.",
+      "license": "Apache-2.0",
+      "projectReferences": [
+        "planning-tool-ui:0.1.0"
+      ],
+      "evidenceCollected": {
+        "vendorEvidence": [
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "author.name",
+            "value": "Austin Andrews"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "author.web",
+            "value": "http://twitter.com/templarian"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "bugs.url",
+            "value": "https://github.com/Templarian/MaterialDesign/issues"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "description",
+            "value": "Dist for Material Design Webfont. This includes the Stock and Community icons in a single webfont collection."
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "homepage",
+            "value": "https://materialdesignicons.com"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "name",
+            "value": "@mdi/font"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "name",
+            "value": "@mdi/font_project"
+          }
+        ],
+        "productEvidence": [
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "name",
+            "value": "@mdi/font"
+          }
+        ],
+        "versionEvidence": [
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "version",
+            "value": "5.9.55"
+          }
+        ]
+      },
+      "packages": [
+        {
+          "id": "pkg:npm/%40mdi%2Ffont@5.9.55",
+          "confidence": "HIGHEST",
+          "url": "https://ossindex.sonatype.org/component/pkg:npm/%40mdi%2Ffont@5.9.55?utm_source=dependency-check&utm_medium=integration&utm_content=7.3.0"
+        }
+      ]
+    },
+    {
+      "isVirtual": false,
+      "fileName": "esbuild.exe",
+      "filePath": "C:\\Users\\user\\Documents\\node_modules\\esbuild-windows-64\\esbuild.exe",
+      "md5": "ba62947a8bc13b4cd61c3aeb843a8ca1",
+      "sha1": "9fbbeb727f2f852177f6feefcb58170b27a6115b",
+      "sha256": "ef0771ad284fb7a87d58f0e3b6f99b816bb887c5c995581fc1998baee7a4adb6",
+      "evidenceCollected": {
+        "vendorEvidence": [
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "esbuild"
+          }
+        ],
+        "productEvidence": [
+          {
+            "type": "product",
+            "confidence": "HIGH",
+            "source": "file",
+            "name": "name",
+            "value": "esbuild"
+          }
+        ],
+        "versionEvidence": []
+      }
+    },
+    {
+      "isVirtual": true,
+      "fileName": "loader-utils:2.0.2",
+      "filePath": "C:\\Users\\user\\Documents\\yarn.lock?loader-utils",
+      "projectReferences": [
+        "yarn.lock: transitive"
+      ],
+      "evidenceCollected": {
+        "vendorEvidence": [
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "package.json",
+            "name": "name",
+            "value": "loader-utils"
+          }
+        ],
+        "productEvidence": [
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "name",
+            "value": "loader-utils"
+          }
+        ],
+        "versionEvidence": [
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "version",
+            "value": "2.0.2"
+          }
+        ]
+      },
+      "packages": [
+        {
+          "id": "pkg:npm/loader-utils@2.0.2",
+          "confidence": "HIGHEST",
+          "url": "https://ossindex.sonatype.org/component/pkg:npm/loader-utils@2.0.2?utm_source=dependency-check&utm_medium=integration&utm_content=7.3.0"
+        }
+      ],
+      "vulnerabilities": [
+        {
+          "source": "NPM",
+          "name": "1084925",
+          "unscored": "true",
+          "severity": "critical",
+          "cwes": [],
+          "description": "Prototype pollution vulnerability in function parseQuery in parseQuery.js in webpack loader-utils prior to version 2.0.3 via the name variable in parseQuery.js.",
+          "notes": "",
+          "references": [
+            {
+              "source": "Advisory 1084925: Prototype pollution in webpack loader-utils",
+              "name": "- https://nvd.nist.gov/vuln/detail/CVE-2022-37601\n- https://github.com/webpack/loader-utils/issues/212\n- https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/parseQuery.js#L11\n- https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/parseQuery.js#L47\n- https://github.com/webpack/loader-utils/releases/tag/v2.0.3\n- https://github.com/webpack/loader-utils/pull/217\n- https://github.com/webpack/loader-utils/pull/220\n- https://github.com/webpack/loader-utils/releases/tag/v1.4.1\n- https://github.com/advisories/GHSA-76p3-8jx3-jpfq"
+            }
+          ],
+          "vulnerableSoftware": [
+            {
+              "software": {
+                "id": "cpe:2.3:a:*:loader-utils:\\>\\=2.0.0\\<2.0.3:*:*:*:*:*:*:*"
+              }
+            }
+          ]
+        },
+        {
+          "source": "OSSINDEX",
+          "name": "CVE-2022-37601",
+          "severity": "HIGH",
+          "cvssv2": {
+            "score": 9.8,
+            "accessVector": "N",
+            "accessComplexity": "L",
+            "authenticationr": "$enc.json($vuln.cvssV2.authentication)",
+            "confidentialImpact": "H",
+            "integrityImpact": "H",
+            "availabilityImpact": "H",
+            "severity": "HIGH"
+          },
+          "cwes": [
+            "CWE-1321"
+          ],
+          "description": "Prototype pollution vulnerability in function parseQuery in parseQuery.js in webpack loader-utils 2.0.0 via the name variable in parseQuery.js.",
+          "notes": "",
+          "references": [
+            {
+              "source": "OSSINDEX",
+              "url": "https://ossindex.sonatype.org/vulnerability/CVE-2022-37601?component-type=npm&component-name=loader-utils&utm_source=dependency-check&utm_medium=integration&utm_content=7.3.0",
+              "name": "[CVE-2022-37601] Prototype pollution vulnerability in function parseQuery in parseQuery.js in webpack loader-utils 2.0.0 via the name variable in parseQuery.js."
+            },
+            {
+              "source": "OSSIndex",
+              "url": "https://github.com/webpack/loader-utils/issues/212",
+              "name": "https://github.com/webpack/loader-utils/issues/212"
+            },
+            {
+              "source": "OSSIndex",
+              "url": "https://github.com/webpack/loader-utils/pull/217",
+              "name": "https://github.com/webpack/loader-utils/pull/217"
+            },
+            {
+              "source": "OSSIndex",
+              "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37601",
+              "name": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37601"
+            },
+            {
+              "source": "OSSIndex",
+              "url": "https://github.com/webpack/loader-utils/releases/tag/v1.4.1",
+              "name": "https://github.com/webpack/loader-utils/releases/tag/v1.4.1"
+            },
+            {
+              "source": "OSSIndex",
+              "url": "https://github.com/webpack/loader-utils/releases/tag/v2.0.3",
+              "name": "https://github.com/webpack/loader-utils/releases/tag/v2.0.3"
+            }
+          ],
+          "vulnerableSoftware": [
+            {
+              "software": {
+                "id": "cpe:2.3:a:*:loader-utils:2.0.2:*:*:*:*:*:*:*",
+                "vulnerabilityIdMatched": "true"
+              }
+            }
+          ]
+        },
+        {
+          "source": "OSSINDEX",
+          "name": "CVE-2022-37599",
+          "severity": "HIGH",
+          "cvssv2": {
+            "score": 7.5,
+            "accessVector": "N",
+            "accessComplexity": "L",
+            "authenticationr": "$enc.json($vuln.cvssV2.authentication)",
+            "confidentialImpact": "N",
+            "integrityImpact": "N",
+            "availabilityImpact": "H",
+            "severity": "HIGH"
+          },
+          "cwes": [
+            "CWE-400"
+          ],
+          "description": "A Regular expression denial of service (ReDoS) flaw was found in Function interpolateName in interpolateName.js in webpack loader-utils 2.0.0 via the resourcePath variable in interpolateName.js.",
+          "notes": "",
+          "references": [
+            {
+              "source": "OSSIndex",
+              "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37599",
+              "name": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37599"
+            },
+            {
+              "source": "OSSIndex",
+              "url": "https://github.com/webpack/loader-utils/issues/216",
+              "name": "https://github.com/webpack/loader-utils/issues/216"
+            },
+            {
+              "source": "OSSIndex",
+              "url": "https://github.com/webpack/loader-utils/issues/215",
+              "name": "https://github.com/webpack/loader-utils/issues/215"
+            },
+            {
+              "source": "OSSIndex",
+              "url": "https://github.com/webpack/loader-utils/releases/tag/v1.4.2",
+              "name": "https://github.com/webpack/loader-utils/releases/tag/v1.4.2"
+            },
+            {
+              "source": "OSSINDEX",
+              "url": "https://ossindex.sonatype.org/vulnerability/CVE-2022-37599?component-type=npm&component-name=loader-utils&utm_source=dependency-check&utm_medium=integration&utm_content=7.3.0",
+              "name": "[CVE-2022-37599] CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"
+            }
+          ],
+          "vulnerableSoftware": [
+            {
+              "software": {
+                "id": "cpe:2.3:a:*:loader-utils:2.0.2:*:*:*:*:*:*:*",
+                "vulnerabilityIdMatched": "true"
+              }
+            }
+          ]
+        },
+        {
+          "source": "OSSINDEX",
+          "name": "CVE-2022-37603",
+          "severity": "HIGH",
+          "cvssv2": {
+            "score": 7.5,
+            "accessVector": "N",
+            "accessComplexity": "L",
+            "authenticationr": "$enc.json($vuln.cvssV2.authentication)",
+            "confidentialImpact": "N",
+            "integrityImpact": "N",
+            "availabilityImpact": "H",
+            "severity": "HIGH"
+          },
+          "cwes": [
+            "CWE-1333"
+          ],
+          "description": "A Regular expression denial of service (ReDoS) flaw was found in Function interpolateName in interpolateName.js in webpack loader-utils 2.0.0 via the url variable in interpolateName.js.",
+          "notes": "",
+          "references": [
+            {
+              "source": "OSSIndex",
+              "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37603",
+              "name": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37603"
+            },
+            {
+              "source": "OSSIndex",
+              "url": "https://github.com/webpack/loader-utils/issues/213",
+              "name": "https://github.com/webpack/loader-utils/issues/213"
+            },
+            {
+              "source": "OSSIndex",
+              "url": "https://github.com/webpack/loader-utils/issues/216",
+              "name": "https://github.com/webpack/loader-utils/issues/216"
+            },
+            {
+              "source": "OSSIndex",
+              "url": "https://github.com/webpack/loader-utils/pull/224",
+              "name": "https://github.com/webpack/loader-utils/pull/224"
+            },
+            {
+              "source": "OSSINDEX",
+              "url": "https://ossindex.sonatype.org/vulnerability/CVE-2022-37603?component-type=npm&component-name=loader-utils&utm_source=dependency-check&utm_medium=integration&utm_content=7.3.0",
+              "name": "[CVE-2022-37603] A Regular expression denial of service (ReDoS) flaw was found in Function interpolateName in interpolateName.js in webpack loader-utils 2.0.0 via the url variable in interpolateName.js."
+            }
+          ],
+          "vulnerableSoftware": [
+            {
+              "software": {
+                "id": "cpe:2.3:a:*:loader-utils:2.0.2:*:*:*:*:*:*:*",
+                "vulnerabilityIdMatched": "true"
+              }
+            }
+          ]
+        },
+        {
+          "source": "NPM",
+          "name": "1084992",
+          "unscored": "true",
+          "severity": "high",
+          "cwes": [],
+          "description": "A Regular expression denial of service (ReDoS) flaw was found in Function interpolateName in interpolateName.js in webpack loader-utils 2.0.0 via the url variable in interpolateName.js. A badly or maliciously formed string could be used to send crafted requests that cause a system to crash or take a disproportional amount of time to process. This issue has been patched in versions 1.4.2, 2.0.4 and 3.2.1.",
+          "notes": "",
+          "references": [
+            {
+              "source": "Advisory 1084992: loader-utils is vulnerable to Regular Expression Denial of Service (ReDoS) via url variable",
+              "name": "- https://nvd.nist.gov/vuln/detail/CVE-2022-37603\n- https://github.com/webpack/loader-utils/issues/213\n- https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L107\n- https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L38\n- https://github.com/webpack/loader-utils/issues/216\n- https://github.com/advisories/GHSA-3rfm-jhwj-7488"
+            }
+          ],
+          "vulnerableSoftware": [
+            {
+              "software": {
+                "id": "cpe:2.3:a:*:loader-utils:\\>\\=2.0.0\\<2.0.4:*:*:*:*:*:*:*"
+              }
+            }
+          ]
+        },
+        {
+          "source": "NPM",
+          "name": "1084995",
+          "unscored": "true",
+          "severity": "high",
+          "cwes": [],
+          "description": "A regular expression denial of service (ReDoS) flaw was found in Function interpolateName in interpolateName.js in webpack loader-utils via the resourcePath variable in interpolateName.js. A badly or maliciously formed string could be used to send crafted requests that cause a system to crash or take a disproportional amount of time to process. This issue has been patched in versions 1.4.2, 2.0.4 and 3.2.1.",
+          "notes": "",
+          "references": [
+            {
+              "source": "Advisory 1084995: loader-utils is vulnerable to Regular Expression Denial of Service (ReDoS) ",
+              "name": "- https://nvd.nist.gov/vuln/detail/CVE-2022-37599\n- https://github.com/webpack/loader-utils/issues/211\n- https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L38\n- https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/interpolateName.js#L83\n- https://github.com/webpack/loader-utils/issues/216\n- https://github.com/webpack/loader-utils/commit/36dc86617930a5cf18af51cf3f53d0ee284d2824\n- https://github.com/advisories/GHSA-hhq3-ff78-jv3g"
+            }
+          ],
+          "vulnerableSoftware": [
+            {
+              "software": {
+                "id": "cpe:2.3:a:*:loader-utils:\\>\\=2.0.0\\<2.0.4:*:*:*:*:*:*:*"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "isVirtual": false,
+      "fileName": "package.json",
+      "filePath": "C:\\Users\\user\\Documents\\package.json",
+      "md5": "904b6b0b6a6b75d3f0ab4a997c585a29",
+      "sha1": "60cc61deee7623f4eed17e35099815841317a78d",
+      "sha256": "eb3cc35bf9dcf1e6d622325cd9add439518ce99aee13dd0d561beb2d2c8e90cd",
+      "evidenceCollected": {
+        "vendorEvidence": [],
+        "productEvidence": [],
+        "versionEvidence": []
+      }
+    },
+    {
+      "isVirtual": true,
+      "fileName": "pinia:2.0.14",
+      "filePath": "C:\\Users\\user\\Documents\\package.json?\\pinia:^2.0.14",
+      "description": "Intuitive, type safe and flexible Store for Vue",
+      "license": "MIT",
+      "projectReferences": [
+        "planning-tool-ui:0.1.0"
+      ],
+      "evidenceCollected": {
+        "vendorEvidence": [
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "author.email",
+            "value": "posva13@gmail.com"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "author.name",
+            "value": "Eduardo San Martin Morote"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "bugs.url",
+            "value": "https://github.com/vuejs/pinia/issues"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "description",
+            "value": "Intuitive, type safe and flexible Store for Vue"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "homepage",
+            "value": "https://github.com/vuejs/pinia#readme"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "name",
+            "value": "pinia"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "name",
+            "value": "pinia_project"
+          }
+        ],
+        "productEvidence": [
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "name",
+            "value": "pinia"
+          }
+        ],
+        "versionEvidence": [
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "version",
+            "value": "2.0.14"
+          }
+        ]
+      },
+      "packages": [
+        {
+          "id": "pkg:npm/pinia@2.0.14",
+          "confidence": "HIGHEST",
+          "url": "https://ossindex.sonatype.org/component/pkg:npm/pinia@2.0.14?utm_source=dependency-check&utm_medium=integration&utm_content=7.3.0"
+        }
+      ]
+    },
+    {
+      "isVirtual": true,
+      "fileName": "roboto-fontface:0.10.0",
+      "filePath": "C:\\Users\\user\\Documents\\package.json?\\roboto-fontface:*",
+      "description": "A simple package providing the Roboto fontface.",
+      "license": "Apache-2.0",
+      "projectReferences": [
+        "planning-tool-ui:0.1.0"
+      ],
+      "evidenceCollected": {
+        "vendorEvidence": [
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "author",
+            "value": "Christian Hoffmeister <mail@choffmeister.de> (http://choffmeister.de/)"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "bugs.url",
+            "value": "https://github.com/choffmeister/roboto-fontface-bower/issues"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "description",
+            "value": "A simple package providing the Roboto fontface."
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "homepage",
+            "value": "https://github.com/choffmeister/roboto-fontface-bower"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "name",
+            "value": "roboto-fontface"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "name",
+            "value": "roboto-fontface_project"
+          }
+        ],
+        "productEvidence": [
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "name",
+            "value": "roboto-fontface"
+          }
+        ],
+        "versionEvidence": [
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "version",
+            "value": "0.10.0"
+          }
+        ]
+      },
+      "packages": [
+        {
+          "id": "pkg:npm/roboto-fontface@0.10.0",
+          "confidence": "HIGHEST",
+          "url": "https://ossindex.sonatype.org/component/pkg:npm/roboto-fontface@0.10.0?utm_source=dependency-check&utm_medium=integration&utm_content=7.3.0"
+        }
+      ]
+    },
+    {
+      "isVirtual": true,
+      "fileName": "vue-router:4.0.16",
+      "filePath": "C:\\Users\\user\\Documents\\package.json?\\vue-router:^4.0.16",
+      "license": "MIT",
+      "projectReferences": [
+        "planning-tool-ui:0.1.0"
+      ],
+      "evidenceCollected": {
+        "vendorEvidence": [
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "bugs.url",
+            "value": "https://github.com/vuejs/router/issues"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "homepage",
+            "value": "https://github.com/vuejs/router#readme"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "name",
+            "value": "vue-router"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "name",
+            "value": "vue-router_project"
+          }
+        ],
+        "productEvidence": [
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "name",
+            "value": "vue-router"
+          }
+        ],
+        "versionEvidence": [
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "version",
+            "value": "4.0.16"
+          }
+        ]
+      },
+      "packages": [
+        {
+          "id": "pkg:npm/vue-router@4.0.16",
+          "confidence": "HIGHEST",
+          "url": "https://ossindex.sonatype.org/component/pkg:npm/vue-router@4.0.16?utm_source=dependency-check&utm_medium=integration&utm_content=7.3.0"
+        }
+      ]
+    },
+    {
+      "isVirtual": true,
+      "fileName": "vue:3.2.37",
+      "filePath": "C:\\Users\\user\\Documents\\package.json?\\vue:^3.2.37",
+      "description": "The progressive JavaScript framework for building modern web UI.",
+      "license": "MIT",
+      "projectReferences": [
+        "planning-tool-ui:0.1.0"
+      ],
+      "evidenceCollected": {
+        "vendorEvidence": [
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "author",
+            "value": "Evan You"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "bugs.url",
+            "value": "https://github.com/vuejs/core/issues"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "description",
+            "value": "The progressive JavaScript framework for building modern web UI."
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "homepage",
+            "value": "https://github.com/vuejs/core/tree/main/packages/vue#readme"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "name",
+            "value": "vue"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "name",
+            "value": "vue_project"
+          }
+        ],
+        "productEvidence": [
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "name",
+            "value": "vue"
+          }
+        ],
+        "versionEvidence": [
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "version",
+            "value": "3.2.37"
+          }
+        ]
+      },
+      "packages": [
+        {
+          "id": "pkg:npm/vue@3.2.37",
+          "confidence": "HIGHEST",
+          "url": "https://ossindex.sonatype.org/component/pkg:npm/vue@3.2.37?utm_source=dependency-check&utm_medium=integration&utm_content=7.3.0"
+        }
+      ]
+    },
+    {
+      "isVirtual": true,
+      "fileName": "vuetify:3.0.0-beta.4",
+      "filePath": "C:\\Users\\user\\Documents\\package.json?\\vuetify:^3.0.0-beta.0",
+      "description": "Vue Material Component Framework",
+      "license": "MIT",
+      "projectReferences": [
+        "planning-tool-ui:0.1.0"
+      ],
+      "evidenceCollected": {
+        "vendorEvidence": [
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "author.email",
+            "value": "john@vuetifyjs.com"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "author.name",
+            "value": "John Leider"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "bugs.url",
+            "value": "https://issues.vuetifyjs.com"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "description",
+            "value": "Vue Material Component Framework"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "homepage",
+            "value": "https://vuetifyjs.com"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "name",
+            "value": "vuetify"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "name",
+            "value": "vuetify_project"
+          }
+        ],
+        "productEvidence": [
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "name",
+            "value": "vuetify"
+          }
+        ],
+        "versionEvidence": [
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "version",
+            "value": "3.0.0-beta.4"
+          }
+        ]
+      },
+      "packages": [
+        {
+          "id": "pkg:npm/vuetify@3.0.0-beta.4",
+          "confidence": "HIGHEST",
+          "url": "https://ossindex.sonatype.org/component/pkg:npm/vuetify@3.0.0-beta.4?utm_source=dependency-check&utm_medium=integration&utm_content=7.3.0"
+        }
+      ],
+      "vulnerabilityIds": [
+        {
+          "id": "cpe:2.3:a:vuetifyjs:vuetify:3.0.0.4:*:*:*:*:*:*:*",
+          "confidence": "HIGHEST",
+          "url": "https://nvd.nist.gov/vuln/search/results?form_type=Advanced&results_type=overview&search_type=all&cpe_vendor=cpe%3A%2F%3Avuetifyjs&cpe_product=cpe%3A%2F%3Avuetifyjs%3Avuetify&cpe_version=cpe%3A%2F%3Avuetifyjs%3Avuetify%3A3.0.0.4"
+        }
+      ]
+    },
+    {
+      "isVirtual": true,
+      "fileName": "webfontloader:1.6.28",
+      "filePath": "C:\\Users\\user\\Documents\\package.json?\\webfontloader:^1.0.0",
+      "description": "Web Font Loader gives you added control when using linked fonts via @font-face.",
+      "license": "Apache-2.0",
+      "projectReferences": [
+        "planning-tool-ui:0.1.0"
+      ],
+      "evidenceCollected": {
+        "vendorEvidence": [
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "bugs.url",
+            "value": "https://github.com/typekit/webfontloader/issues"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "description",
+            "value": "Web Font Loader gives you added control when using linked fonts via @font-face."
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "homepage",
+            "value": "https://github.com/typekit/webfontloader"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "name",
+            "value": "webfontloader"
+          },
+          {
+            "type": "vendor",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "name",
+            "value": "webfontloader_project"
+          }
+        ],
+        "productEvidence": [
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "name",
+            "value": "webfontloader"
+          }
+        ],
+        "versionEvidence": [
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "version",
+            "value": "1.6.28"
+          }
+        ]
+      },
+      "packages": [
+        {
+          "id": "pkg:npm/webfontloader@1.6.28",
+          "confidence": "HIGHEST",
+          "url": "https://ossindex.sonatype.org/component/pkg:npm/webfontloader@1.6.28?utm_source=dependency-check&utm_medium=integration&utm_content=7.3.0"
+        }
+      ]
+    }
+  ]
+}
