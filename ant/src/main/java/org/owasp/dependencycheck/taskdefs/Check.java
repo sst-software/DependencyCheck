@@ -279,6 +279,10 @@ public class Check extends Update {
      */
     private Boolean jarAnalyzerEnabled;
     /**
+     * Whether or not the JSON Report Analyzer is enabled.
+     */
+    private Boolean JSONReportAnalyzerEnabled;
+    /**
      * Whether or not the Archive Analyzer is enabled.
      */
     private Boolean archiveAnalyzerEnabled;
@@ -774,6 +778,24 @@ public class Check extends Update {
      */
     public void setJarAnalyzerEnabled(Boolean jarAnalyzerEnabled) {
         this.jarAnalyzerEnabled = jarAnalyzerEnabled;
+    }
+
+    /**
+     * Returns whether or not the analyzer is enabled.
+     *
+     * @return true if the analyzer is enabled
+     */
+    public Boolean isJSONReportAnalyzerEnabled() {
+        return JSONReportAnalyzerEnabled;
+    }
+
+    /**
+     * Sets whether or not the analyzer is enabled.
+     *
+     * @param JSONReportAnalyzerEnabled the value of the new setting
+     */
+    public void setJSONReportAnalyzerEnabled(Boolean JSONReportAnalyzerEnabled) {
+        this.JSONReportAnalyzerEnabled = JSONReportAnalyzerEnabled;
     }
 
     /**
@@ -2127,6 +2149,7 @@ public class Check extends Update {
         getSettings().setBooleanIfNotNull(Settings.KEYS.PRETTY_PRINT, prettyPrint);
         getSettings().setBooleanIfNotNull(Settings.KEYS.ANALYZER_RETIRED_ENABLED, enableRetired);
         getSettings().setBooleanIfNotNull(Settings.KEYS.ANALYZER_JAR_ENABLED, jarAnalyzerEnabled);
+        getSettings().setBooleanIfNotNull(Settings.KEYS.ANALYZER_REPORT_JSON_ENABLED, JSONReportAnalyzerEnabled);
         getSettings().setBooleanIfNotNull(Settings.KEYS.ANALYZER_PYTHON_DISTRIBUTION_ENABLED, pyDistributionAnalyzerEnabled);
         getSettings().setBooleanIfNotNull(Settings.KEYS.ANALYZER_PYTHON_PACKAGE_ENABLED, pyPackageAnalyzerEnabled);
         getSettings().setBooleanIfNotNull(Settings.KEYS.ANALYZER_RUBY_GEMSPEC_ENABLED, rubygemsAnalyzerEnabled);

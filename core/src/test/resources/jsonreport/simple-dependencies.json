@@ -1,0 +1,213 @@
+{
+  "reportSchema": "1.1",
+  "scanInfo": {
+    "engineVersion": "7.3.0",
+    "dataSource": [
+      {
+        "name": "NVD CVE Checked",
+        "timestamp": "2022-11-25T16:07:12"
+      },
+      {
+        "name": "NVD CVE Modified",
+        "timestamp": "2022-11-25T14:00:01"
+      },
+      {
+        "name": "VersionCheckOn",
+        "timestamp": "2022-11-16T16:15:23"
+      }
+    ]
+  },
+  "projectInfo": {
+    "name": "",
+    "reportDate": "2022-11-25T15:07:23.809220700Z",
+    "credits": {
+      "NVD": "This report contains data retrieved from the National Vulnerability Database: http://nvd.nist.gov",
+      "NPM": "This report may contain data retrieved from the NPM Public Advisories: https://www.npmjs.com/advisories",
+      "RETIREJS": "This report may contain data retrieved from the RetireJS community: https://retirejs.github.io/retire.js/",
+      "OSSINDEX": "This report may contain data retrieved from the Sonatype OSS Index: https://ossindex.sonatype.org"
+    }
+  },
+  "dependencies": [
+    {
+      "isVirtual": true,
+      "fileName": "loader-utils:2.0.2",
+      "filePath": "C:\\Users\\user\\Documents\\yarn.lock?loader-utils",
+      "projectReferences": [
+        "yarn.lock: transitive"
+      ],
+      "evidenceCollected": {
+        "vendorEvidence": [
+          {
+            "type": "vendor",
+            "confidence": "HIGH",
+            "source": "package.json",
+            "name": "name",
+            "value": "loader-utils"
+          }
+        ],
+        "productEvidence": [
+          {
+            "type": "product",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "name",
+            "value": "loader-utils"
+          }
+        ],
+        "versionEvidence": [
+          {
+            "type": "version",
+            "confidence": "HIGHEST",
+            "source": "package.json",
+            "name": "version",
+            "value": "2.0.2"
+          }
+        ]
+      },
+      "packages": [
+        {
+          "id": "pkg:npm/loader-utils@2.0.2",
+          "confidence": "HIGHEST",
+          "url": "https://ossindex.sonatype.org/component/pkg:npm/loader-utils@2.0.2?utm_source=dependency-check&utm_medium=integration&utm_content=7.3.0"
+        }
+      ],
+      "vulnerabilities": [
+        {
+          "source": "NPM",
+          "name": "1084925",
+          "unscored": "true",
+          "severity": "critical",
+          "cwes": [],
+          "description": "Prototype pollution vulnerability in function parseQuery in parseQuery.js in webpack loader-utils prior to version 2.0.3 via the name variable in parseQuery.js.",
+          "notes": "",
+          "references": [
+            {
+              "source": "Advisory 1084925: Prototype pollution in webpack loader-utils",
+              "name": "- https://nvd.nist.gov/vuln/detail/CVE-2022-37601\n- https://github.com/webpack/loader-utils/issues/212\n- https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/parseQuery.js#L11\n- https://github.com/webpack/loader-utils/blob/d9f4e23cf411d8556f8bac2d3bf05a6e0103b568/lib/parseQuery.js#L47\n- https://github.com/webpack/loader-utils/releases/tag/v2.0.3\n- https://github.com/webpack/loader-utils/pull/217\n- https://github.com/webpack/loader-utils/pull/220\n- https://github.com/webpack/loader-utils/releases/tag/v1.4.1\n- https://github.com/advisories/GHSA-76p3-8jx3-jpfq"
+            }
+          ],
+          "vulnerableSoftware": [
+            {
+              "software": {
+                "id": "cpe:2.3:a:*:loader-utils:\\>\\=2.0.0\\<2.0.3:*:*:*:*:*:*:*"
+              }
+            }
+          ]
+        },
+        {
+          "source": "OSSINDEX",
+          "name": "CVE-2022-37601",
+          "severity": "HIGH",
+          "cvssv2": {
+            "score": 9.8,
+            "accessVector": "N",
+            "accessComplexity": "L",
+            "authenticationr": "$enc.json($vuln.cvssV2.authentication)",
+            "confidentialImpact": "H",
+            "integrityImpact": "H",
+            "availabilityImpact": "H",
+            "severity": "HIGH"
+          },
+          "cwes": [
+            "CWE-1321"
+          ],
+          "description": "Prototype pollution vulnerability in function parseQuery in parseQuery.js in webpack loader-utils 2.0.0 via the name variable in parseQuery.js.",
+          "notes": "",
+          "references": [
+            {
+              "source": "OSSINDEX",
+              "url": "https://ossindex.sonatype.org/vulnerability/CVE-2022-37601?component-type=npm&component-name=loader-utils&utm_source=dependency-check&utm_medium=integration&utm_content=7.3.0",
+              "name": "[CVE-2022-37601] Prototype pollution vulnerability in function parseQuery in parseQuery.js in webpack loader-utils 2.0.0 via the name variable in parseQuery.js."
+            },
+            {
+              "source": "OSSIndex",
+              "url": "https://github.com/webpack/loader-utils/issues/212",
+              "name": "https://github.com/webpack/loader-utils/issues/212"
+            },
+            {
+              "source": "OSSIndex",
+              "url": "https://github.com/webpack/loader-utils/pull/217",
+              "name": "https://github.com/webpack/loader-utils/pull/217"
+            },
+            {
+              "source": "OSSIndex",
+              "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37601",
+              "name": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37601"
+            },
+            {
+              "source": "OSSIndex",
+              "url": "https://github.com/webpack/loader-utils/releases/tag/v1.4.1",
+              "name": "https://github.com/webpack/loader-utils/releases/tag/v1.4.1"
+            },
+            {
+              "source": "OSSIndex",
+              "url": "https://github.com/webpack/loader-utils/releases/tag/v2.0.3",
+              "name": "https://github.com/webpack/loader-utils/releases/tag/v2.0.3"
+            }
+          ],
+          "vulnerableSoftware": [
+            {
+              "software": {
+                "id": "cpe:2.3:a:*:loader-utils:2.0.2:*:*:*:*:*:*:*",
+                "vulnerabilityIdMatched": "true"
+              }
+            }
+          ]
+        },
+        {
+          "source": "OSSINDEX",
+          "name": "CVE-2022-37599",
+          "severity": "HIGH",
+          "cvssv2": {
+            "score": 7.5,
+            "accessVector": "N",
+            "accessComplexity": "L",
+            "authenticationr": "$enc.json($vuln.cvssV2.authentication)",
+            "confidentialImpact": "N",
+            "integrityImpact": "N",
+            "availabilityImpact": "H",
+            "severity": "HIGH"
+          },
+          "cwes": [
+            "CWE-400"
+          ],
+          "description": "A Regular expression denial of service (ReDoS) flaw was found in Function interpolateName in interpolateName.js in webpack loader-utils 2.0.0 via the resourcePath variable in interpolateName.js.",
+          "notes": "",
+          "references": [
+            {
+              "source": "OSSIndex",
+              "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37599",
+              "name": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2022-37599"
+            },
+            {
+              "source": "OSSIndex",
+              "url": "https://github.com/webpack/loader-utils/issues/216",
+              "name": "https://github.com/webpack/loader-utils/issues/216"
+            },
+            {
+              "source": "OSSIndex",
+              "url": "https://github.com/webpack/loader-utils/issues/215",
+              "name": "https://github.com/webpack/loader-utils/issues/215"
+            },
+            {
+              "source": "OSSIndex",
+              "url": "https://github.com/webpack/loader-utils/releases/tag/v1.4.2",
+              "name": "https://github.com/webpack/loader-utils/releases/tag/v1.4.2"
+            },
+            {
+              "source": "OSSINDEX",
+              "url": "https://ossindex.sonatype.org/vulnerability/CVE-2022-37599?component-type=npm&component-name=loader-utils&utm_source=dependency-check&utm_medium=integration&utm_content=7.3.0",
+              "name": "[CVE-2022-37599] CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"
+            }
+          ],
+          "vulnerableSoftware": [
+            {
+              "software": {
+                "id": "cpe:2.3:a:*:loader-utils:2.0.2:*:*:*:*:*:*:*",
+                "vulnerabilityIdMatched": "true"
+              }
+            }
+          ]
+        }
+      ]
+    }

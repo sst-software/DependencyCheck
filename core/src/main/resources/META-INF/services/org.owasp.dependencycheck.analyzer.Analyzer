@@ -49,4 +49,4 @@ org.owasp.dependencycheck.analyzer.KnownExploitedVulnerabilityAnalyzer
 org.owasp.dependencycheck.analyzer.DartAnalyzer
 org.owasp.dependencycheck.analyzer.UnusedSuppressionRuleAnalyzer
 org.owasp.dependencycheck.analyzer.LibmanAnalyzer
-
+org.owasp.dependencycheck.analyzer.JSONReportAnalyzer
