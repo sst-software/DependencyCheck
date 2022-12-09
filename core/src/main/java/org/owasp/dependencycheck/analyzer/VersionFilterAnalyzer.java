@@ -136,7 +136,7 @@ public class VersionFilterAnalyzer extends AbstractAnalyzer {
         final Set<Evidence> remove;
         if (dependency.getVersion() != null) {
             remove = dependency.getEvidence(EvidenceType.VERSION).stream()
-                    .filter(e -> !dependency.getVersion().equals(e.getValue()))
+                    .filter(e -> !dependency.getVersion().equals(Objects.toString(DependencyVersionUtil.parseVersion(e.getValue(), true), null)))
                     .collect(Collectors.toSet());
         } else {
             remove = new HashSet<>();

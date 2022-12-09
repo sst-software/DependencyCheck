@@ -297,6 +297,10 @@ public final class Settings {
          */
         public static final String ANALYZER_JAR_ENABLED = "analyzer.jar.enabled";
         /**
+         * The properties key for whether the JSON Analyzer is enabled.
+         */
+        public static final String ANALYZER_REPORT_JSON_ENABLED = "analyzer.report.json.enabled";
+        /**
          * The properties key for whether experimental analyzers are loaded.
          */
         public static final String ANALYZER_EXPERIMENTAL_ENABLED = "analyzer.experimental.enabled";
@@ -1464,4 +1468,58 @@ public final class Settings {
         }
         return tempFile;
     }
+
+    /**
+     * Disables all analyzers, useful for testing purposes.
+     */
+    public void disableAllAnalyzers() {
+        setBoolean(Settings.KEYS.ANALYZER_JAR_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_REPORT_JSON_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_NODE_PACKAGE_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_ARCHIVE_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_NODE_AUDIT_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_YARN_AUDIT_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_PNPM_AUDIT_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_RETIREJS_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_COMPOSER_LOCK_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_CPANFILE_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_PYTHON_DISTRIBUTION_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_PYTHON_PACKAGE_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_MIX_AUDIT_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_GOLANG_MOD_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_GOLANG_DEP_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_RUBY_GEMSPEC_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_MAVEN_INSTALL_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_PIP_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_PIPFILE_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_POETRY_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_CMAKE_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_BUNDLE_AUDIT_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_ASSEMBLY_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_NUSPEC_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_NUGETCONF_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_MSBUILD_PROJECT_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_NEXUS_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_CENTRAL_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_OPENSSL_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_COCOAPODS_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_SWIFT_PACKAGE_MANAGER_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_SWIFT_PACKAGE_RESOLVED_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_CPE_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_NPM_CPE_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_CPE_SUPPRESSION_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_DEPENDENCY_BUNDLING_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_DEPENDENCY_MERGING_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_FALSE_POSITIVE_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_FILE_NAME_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_PE_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_HINT_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_VERSION_FILTER_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_NVD_CVE_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_VULNERABILITY_SUPPRESSION_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_OSSINDEX_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_DART_ENABLED, false);
+        setBoolean(Settings.KEYS.ANALYZER_AUTOCONF_ENABLED, false);
+    }
+
 }

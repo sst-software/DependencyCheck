@@ -123,7 +123,11 @@ public class ReportGenerator {
         /**
          * Generate JUNIT report.
          */
-        JUNIT
+        JUNIT,
+        /**
+         * Generate report with all information to allow scanning of report.
+         */
+        COMPLETE
     }
 
     /**
@@ -345,7 +349,7 @@ public class ReportGenerator {
             final String templateName = format.toString().toLowerCase() + "Report";
             processTemplate(templateName, out);
             if (settings.getBoolean(Settings.KEYS.PRETTY_PRINT, false)) {
-                if (format == Format.JSON || format == Format.SARIF) {
+                if (format == Format.JSON || format == Format.SARIF || format == Format.COMPLETE) {
                     pretifyJson(out.getPath());
                 } else if (format == Format.XML || format == Format.JUNIT) {
                     pretifyXml(out.getPath());
@@ -391,6 +395,9 @@ public class ReportGenerator {
         }
         if (format == Format.SARIF && !pathToCheck.endsWith(".sarif")) {
             return new File(outFile, "dependency-check-report.sarif");
+        }
+        if (format == Format.COMPLETE && !pathToCheck.endsWith(".json")) {
+            return new File(outFile, "dependency-check-complete.json");
         }
         return outFile;
     }
