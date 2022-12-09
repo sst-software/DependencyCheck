@@ -500,6 +500,8 @@ public class App {
                 cli.hasOption(CliParser.ARGUMENT.RETIRE_JS_FORCEUPDATE));
         settings.setBoolean(Settings.KEYS.ANALYZER_JAR_ENABLED,
                 !cli.hasDisableOption(CliParser.ARGUMENT.DISABLE_JAR, Settings.KEYS.ANALYZER_JAR_ENABLED));
+        settings.setBoolean(Settings.KEYS.ANALYZER_REPORT_JSON_ENABLED,
+                !cli.hasDisableOption(CliParser.ARGUMENT.DISABLE_JSON_REPORT, Settings.KEYS.ANALYZER_REPORT_JSON_ENABLED));
         settings.setBoolean(Settings.KEYS.ANALYZER_MSBUILD_PROJECT_ENABLED,
                 !cli.hasDisableOption(CliParser.ARGUMENT.DISABLE_MSBUILD, Settings.KEYS.ANALYZER_MSBUILD_PROJECT_ENABLED));
         settings.setBoolean(Settings.KEYS.ANALYZER_ARCHIVE_ENABLED,

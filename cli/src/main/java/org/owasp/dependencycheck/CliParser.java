@@ -450,6 +450,7 @@ public final class CliParser {
                 .addOption(newOption(ARGUMENT.RETIRED, "Enables the retired analyzers."))
                 .addOption(newOption(ARGUMENT.DISABLE_MSBUILD, "Disable the MS Build Analyzer."))
                 .addOption(newOption(ARGUMENT.DISABLE_JAR, "Disable the Jar Analyzer."))
+                .addOption(newOption(ARGUMENT.DISABLE_JSON_REPORT, "Disable the JSON Report Analyzer"))
                 .addOption(newOption(ARGUMENT.DISABLE_ARCHIVE, "Disable the Archive Analyzer."))
                 .addOption(newOption(ARGUMENT.DISABLE_ASSEMBLY, "Disable the .NET Assembly Analyzer."))
                 .addOption(newOption(ARGUMENT.DISABLE_PY_DIST, "Disable the Python Distribution Analyzer."))
@@ -989,7 +990,6 @@ public final class CliParser {
      * line arguments.
      */
     public static class ARGUMENT {
-
         /**
          * The long CLI argument name specifying the directory/file to scan.
          */
@@ -1171,6 +1171,10 @@ public final class CliParser {
          * Disables the Jar Analyzer.
          */
         public static final String DISABLE_JAR = "disableJar";
+        /**
+         * Disables the JSON Report Analyzer.
+         */
+        public static final String DISABLE_JSON_REPORT = "disableJSONReport";
         /**
          * Disable the MS Build Analyzer.
          */
