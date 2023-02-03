@@ -1,5 +1,6 @@
 package org.owasp.dependencycheck.data.jsonreport;
 
+import javax.json.Json;
 import org.junit.Test;
 import org.owasp.dependencycheck.BaseTest;
 import org.owasp.dependencycheck.dependency.Confidence;
@@ -37,6 +38,17 @@ public class JSONReportParserTest extends BaseTest {
         String input = "{\"dependencies\" : [\"test\"]}";
         JSONReportParser parser = new JSONReportParser(new ByteArrayInputStream(input.getBytes()));
         parser.process();
+    }
+
+    /**
+     * Test if report with no dependencies is correctly handled
+     */
+    @Test
+    public void testEmptyReport() {
+        String input = "{\"dependencies\" : []}";
+        JSONReportParser parser = new JSONReportParser(new ByteArrayInputStream(input.getBytes()));
+        parser.process();
+        assertEquals(0, parser.getDependencies().size());
     }
 
     /**

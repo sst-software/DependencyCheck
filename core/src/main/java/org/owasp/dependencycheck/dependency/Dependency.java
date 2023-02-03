@@ -118,6 +118,10 @@ public class Dependency extends EvidenceCollection implements Serializable {
      */
     private final List<String> availableVersions = new ArrayList<>();
     /**
+     * The ID of this dependency
+     */
+    private Long id;
+    /**
      * The actual file path of the dependency on disk.
      */
     private String actualFilePath;
@@ -1040,6 +1044,20 @@ public class Dependency extends EvidenceCollection implements Serializable {
      */
     public static final Comparator<Dependency> NAME_COMPARATOR
             = Comparator.comparing((Dependency d) -> (d.getDisplayFileName() + d.getFilePath()));
+
+    /**
+     * @return the id
+     */
+    public Long getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     //CSON: OperatorWrap
     /**

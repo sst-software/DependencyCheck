@@ -146,9 +146,11 @@ public class JSONReportParser {
      * @return parsed Dependency
      */
     private Dependency parseStandard(JsonObject obj) {
-        boolean isVirtual = obj.getBoolean("isVirtual");
-        Dependency dependency = new Dependency(isVirtual);
+        Dependency dependency = new Dependency(obj.getBoolean("isVirtual"));
         dependency.setFileName(obj.getString("fileName"));
+        if (obj.containsKey("dependencyId")) {
+            dependency.setId(obj.getJsonNumber("dependencyId").longValue());
+        }
         if (obj.containsKey("filePath")) {
             dependency.setFilePath(obj.getString("filePath"));
         }
