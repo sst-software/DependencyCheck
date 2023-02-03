@@ -20,7 +20,7 @@ Copyright (c) 2012 - Jeremy Long
 
     <groupId>org.owasp</groupId>
     <artifactId>dependency-check-parent</artifactId>
-    <version>7.4.2-SNAPSHOT</version>
+    <version>7.4.3-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -177,19 +177,14 @@ Copyright (c) 2012 - Jeremy Long
         <sonar.language>java</sonar.language>
     </properties>
     <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
         <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>sst-repo</id>
+            <url>https://repository.sst-labs.nl/repository/sst-library-release/</url>
         </repository>
-        <site>
-            <id>gh-pages</id>
-            <name>gh-pages</name>
-            <url>https://jeremylong.github.io/DependencyCheck/</url>
-        </site>
+        <snapshotRepository>
+            <id>sst-repo</id>
+            <url>https://repository.sst-labs.nl/repository/sst-library-snapshot/</url>
+        </snapshotRepository>
     </distributionManagement>
     <build>
         <defaultGoal>clean install</defaultGoal>
@@ -784,75 +779,6 @@ Copyright (c) 2012 - Jeremy Long
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-                <configuration>
-                    <scmCommentPrefix>build:</scmCommentPrefix>
-                    <tagNameFormat>v@{project.version}</tagNameFormat>
-                    <arguments>-Dmaven.javadoc.skip=true -DskipTests -DskipITs</arguments>
-                    <updateWorkingCopyVersions>true</updateWorkingCopyVersions>
-                    <pushChanges>false</pushChanges>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <extensions>true</extensions>
-                <configuration>
-                    <serverId>ossrh</serverId>
-                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
-                    <stagingProgressTimeoutMinutes>120</stagingProgressTimeoutMinutes>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>se.bjurr.violations</groupId>
-                <artifactId>violation-comments-to-github-maven-plugin</artifactId>
-                <dependencies>
-                    <dependency>
-                        <groupId>se.bjurr.violations</groupId>
-                        <artifactId>violation-comments-to-github-lib</artifactId>
-                        <version>1.83.1</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>se.bjurr.violations</groupId>
-                        <artifactId>violations-lib</artifactId>
-                        <version>1.155.3</version>
-                    </dependency>
-                </dependencies>
-                <configuration>
-                    <inherited>false</inherited>
-                    <repositoryOwner>jeremylong</repositoryOwner>
-                    <repositoryName>DependencyCheck</repositoryName>
-                    <gitHubUrl>https://api.github.com/</gitHubUrl>
-                    <createCommentWithAllSingleFileComments>false</createCommentWithAllSingleFileComments>
-                    <createSingleFileComments>true</createSingleFileComments>
-                    <commentOnlyChangedContent>true</commentOnlyChangedContent>
-                    <!-- INFO, WARN, ERROR //-->
-                    <minSeverity>INFO</minSeverity>
-                    <violations>
-                        <violation>
-                            <parser>FINDBUGS</parser>
-                            <reporter>Spotbugs</reporter>
-                            <folder>.</folder>
-                            <pattern>.*/spotbugsXml.xml$</pattern>
-                        </violation>
-                        <violation>
-                            <parser>CHECKSTYLE</parser>
-                            <reporter>Checkstyle</reporter>
-                            <folder>.</folder>
-                            <pattern>.*/checkstyle-result.xml$</pattern>
-                        </violation>
-                        <violation>
-                            <parser>SARIF</parser>
-                            <reporter>Sarif</reporter>
-                            <folder>.</folder>
-                            <pattern>.*/semgrep.sarif$</pattern>
-                        </violation>
-                    </violations>
-                </configuration>
             </plugin>
         </plugins>
     </build>

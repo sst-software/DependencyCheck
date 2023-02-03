@@ -125,7 +125,7 @@ public class Reference implements Serializable, Comparable<Reference> {
 
     @Override
     public String toString() {
-        return "Reference: { name='" + this.name + "', url='" + this.url + "', source='" + this.source + "' }";
+        return "{\"name\"=\"" + this.name + "\", \"url\"=\"" + this.url + "\", \"source\"=\"" + this.source + "\"}";
     }
 
     @Override

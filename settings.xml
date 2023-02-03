@@ -4,9 +4,9 @@
                           https://maven.apache.org/xsd/settings-1.0.0.xsd">
     <servers>
         <server>
-            <id>ossrh</id>
-            <username>${env.MAVEN_USERNAME}</username>
-            <password>${env.MAVEN_PASSWORD}</password>
+            <id>sst-repo</id>
+            <username>s.degraaf</username>
+            <password>qaqx92BPaogkeoy99FyB2Gqn7K2tzVUTceQmMgQJHH2tC9oDnS7KkyCni2bkexa7y4v8pdgqgiSusZQRj3BV8KVJvhKdyS6CyCkwo6ohUVvHzAzVhVg5VezdtFA2eKCi</password>
         </server>
     </servers>
     <profiles>
